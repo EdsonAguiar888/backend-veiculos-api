@@ -1,0 +1,56 @@
+### ========================================
+
+### 1. LISTAR TODOS OS VEÍCULOS
+
+### ========================================
+
+GET http://localhost:3000/veiculo
+Accept: application/json
+
+### ========================================
+
+### 2. BUSCAR VEÍCULO POR ID
+
+### ========================================
+
+GET http://localhost:3000/veiculo/COLOQUE_O_ID_AQUI
+Accept: application/json
+
+### ========================================
+
+### 3. CRIAR VEÍCULO
+
+### ========================================
+
+POST http://localhost:3000/veiculo
+Content-Type: application/json
+
+{
+"nome": "chev",
+"marca": "Chevreeeolet",
+"ano": 1994
+}
+
+### ========================================
+
+### 4. ATUALIZAR VEÍCULO
+
+### ========================================
+
+PUT http://localhost:3000/veiculo/COLOQUE_O_ID_AQUI
+Content-Type: application/json
+
+{
+"nome": "Civic Touring",
+"marca": "Honda",
+"ano": 2025
+}
+
+### ========================================
+
+### 5. EXCLUIR VEÍCULO
+
+### ========================================
+
+DELETE http://localhost:3000/veiculo/COLOQUE_O_ID_AQUI
+Accept: application/json
