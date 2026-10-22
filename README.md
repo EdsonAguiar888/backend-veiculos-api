@@ -1,4 +1,4 @@
-# CRUD de Usuários com Node.js
+# CRUD de Veículos com Node.js
 
 Projeto simples usando Node.js, Express e Mongoose.
 
@@ -7,11 +7,11 @@ Projeto simples usando Node.js, Express e Mongoose.
 ```text
 src/
 ├── controllers/
-│   └── userController.js
+│   └── veiculoController.js
 ├── models/
-│   └── User.js
+│   └── Veiculo.js
 ├── routes/
-│   └── userRoutes.js
+│   └── veiculoRoutes.js
 └── server.js
 ```
 
@@ -29,18 +29,18 @@ npm run dev
 
 | Método | Rota | Ação |
 |---|---|---|
-| GET | /usuarios | Lista usuários |
-| GET | /usuarios/:id | Busca um usuário |
-| POST | /usuarios | Cria um usuário |
-| PUT | /usuarios/:id | Atualiza um usuário |
-| DELETE | /usuarios/:id | Exclui um usuário |
+| GET | /veiculo | Lista Veículos |
+| GET | /veiculo/:id | Busca um Veículo |
+| POST | /veiculo | Cria um Veículo |
+| PUT | /veiculo/:id | Atualiza um Veículo |
+| DELETE | /veiculo/:id | Exclui um Veículo |
 
 ## Exemplo de JSON
 
 ```json
 {
-  "nome": "João Silva",
-  "email": "joao@email.com",
-  "idade": 25
+  "nome": "Uno",
+  "marca": "fiat",
+  "ano": 2001
 }
 ```
